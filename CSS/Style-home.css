@@ -1,35 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 *{
-    /*Temporary color pallete*/
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
     --color1: #03045E;
     --color2: #0077B6;
     --color3: #00B4D8;
     --color4: #90E0EF;
     --color5: #CAF0F8;
+    --white: white;
+    --transparentWhite: rgba(255, 255, 255, 0.459);
+    --black: black;
+
+    --textPadding: 3%;
+    --fontsizeMain: .9rem;
 }
 
 /*Main html tags*/
 
 body{
     margin: 0;
+    background-color: var(--color5);
+}
+
+h1{
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 450;
+}
+
+hr{
+    size: 1;
+    margin: 0;
+}
+
+p{
+    font-weight: 350;
+}
+
+img{
+    object-fit: cover;
 }
 
 nav{
+    background-color: var(--color2);
+    height: 10vh;
+    text-align: right;
+    justify-content: space-between;
+}
+
+nav div{
+    align-self: center;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 1.5%;
+    background-color: var(--color1);
+    transition: background-color 1s;
+    transition: color .5s;
+}
+
+a:hover{
     background-color: var(--color4);
+    color: var(--black);
+}
+
+footer{
+    background-color: var(--color2);
+    margin: 0;
+}
+
+footer a{
+    background-color: transparent;
+    color: black;
+}
+
+footer a:hover{
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
 }
 
 /*Id's - sections*/
 #product{
-    background-color: var(--color3);
+    border-top: var(--color1) double 8px;
+    background-color: var(--color4);
+    display: flex;
+    gap: 5vw;
+    padding: 10%;
+    justify-content: center;
+    max-height: 50vh;
+    min-height: 45vh;
 }
 
 #product img{
-    max-width: 70vw;
-    max-height: 50vh;
+    max-width: 35vw;
+    max-height: 45vh;
+    width: 30vw;
+    height: 55vh;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline h2{
+    text-align: center;
+    margin: 5%;
+}
+
+#timeline p{
+    font-size: var(--fontsizeMain);
+}
+
+#about{
+    background-color: var(--transparentWhite);
 }
 
 /*Classes*/
+.info-product{
+    text-align: right;
+}
+
+.info-product p{
+    max-width: 35vw;
+}
+
+.timeline-content{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.timeline-content p{
+    max-width: 15vw;
+    height: 45vh;
+}
+
+.left-side, .right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side{
+    justify-content: center;
+}
+
+.info-block{
+    display: flex;
+    max-width: 40vw;
+    gap: 5%;
+}
+
 .info-block img{
     max-width: 25vw;
     max-height: 20vh;
 }
 
+/*Responsiveness*/
+@media (width <= 480px){
+
+}
