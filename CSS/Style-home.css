@@ -16,6 +16,7 @@
 
     --textPadding: 3%;
     --fontsizeMain: .9rem;
+    --gapSize: 5%;
 }
 
 /*Main html tags*/
@@ -55,6 +56,7 @@ nav{
 
 nav div{
     align-self: center;
+    margin-right: 5%;
 }
 
 a{
@@ -74,6 +76,7 @@ a:hover{
 footer{
     background-color: var(--color2);
     margin: 0;
+    min-height: 10vh;
 }
 
 footer a{
@@ -92,7 +95,7 @@ footer a:hover{
     border-top: var(--color1) double 8px;
     background-color: var(--color4);
     display: flex;
-    gap: 5vw;
+    gap: var(--gapSize);
     padding: 10%;
     justify-content: center;
     max-height: 50vh;
@@ -122,6 +125,24 @@ footer a:hover{
 
 #about{
     background-color: var(--transparentWhite);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+    min-height: 35vh;
+}
+
+#about p{
+    max-width: 35vw;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    max-height: 5vh;
 }
 
 /*Classes*/
@@ -136,7 +157,7 @@ footer a:hover{
 .timeline-content{
     display: flex;
     justify-content: center;
-    gap: 4%;
+    gap: var(--gapSize);
 }
 
 .timeline-content p{
@@ -157,12 +178,18 @@ footer a:hover{
 .info-block{
     display: flex;
     max-width: 40vw;
-    gap: 5%;
+    gap: var(--gapSize);
 }
 
 .info-block img{
     max-width: 25vw;
     max-height: 20vh;
+}
+
+.about-text-content{
+    display: flex;
+    justify-content: center;
+    gap: var(--gapSize);
 }
 
 /*Responsiveness*/
