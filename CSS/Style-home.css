@@ -15,7 +15,7 @@
     --black: black;
 
     --textPadding: 3%;
-    --fontsizeMain: 1rem;
+    --fontsizeMain: .9rem;
 }
 
 /*Main html tags*/
@@ -31,6 +31,11 @@ h1{
 
 h2{
     font-weight: 450;
+}
+
+hr{
+    size: 1;
+    margin: 0;
 }
 
 p{
@@ -108,6 +113,7 @@ footer a:hover{
 
 #timeline h2{
     text-align: center;
+    margin: 5%;
 }
 
 #timeline p{
@@ -130,6 +136,12 @@ footer a:hover{
 .timeline-content{
     display: flex;
     justify-content: center;
+    gap: 4%;
+}
+
+.timeline-content p{
+    max-width: 15vw;
+    height: 45vh;
 }
 
 .left-side, .right-side{
@@ -138,15 +150,19 @@ footer a:hover{
     justify-content: space-between;
 }
 
+.right-side{
+    justify-content: center;
+}
 
 .info-block{
     display: flex;
     max-width: 40vw;
+    gap: 5%;
 }
 
 .info-block img{
-    max-width: 30vw;
-    max-height: 25vh;
+    max-width: 25vw;
+    max-height: 20vh;
 }
 
 /*Responsiveness*/
