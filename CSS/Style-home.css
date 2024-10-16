@@ -1,10 +1,10 @@
 *{
-
     /*Temporary color pallete*/
-    --color1: rgb(39, 39, 113);
-    --color2: rgb(68, 68, 154);
-    --color3: rgb(90, 90, 172);
-    --color4: rgb(126, 126, 199);
+    --color1: #03045E;
+    --color2: #0077B6;
+    --color3: #00B4D8;
+    --color4: #90E0EF;
+    --color5: #CAF0F8;
 }
 
 /*Main html tags*/
