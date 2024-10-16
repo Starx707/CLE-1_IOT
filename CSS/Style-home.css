@@ -66,11 +66,13 @@ a{
     background-color: var(--color1);
     transition: background-color 1s;
     transition: color .5s;
+    border-radius: 5%;
 }
 
 a:hover{
     background-color: var(--color4);
     color: var(--black);
+    border: var(--black) solid 2px;
 }
 
 footer{
