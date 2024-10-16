@@ -1,12 +1,19 @@
-*{
+* {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 
     --color1: #03045E;
     --color2: #0077B6;
     --color3: #00B4D8;
     --color4: #90E0EF;
     --color5: #CAF0F8;
+    --white: white;
+    --transparentWhite: rgba(255, 255, 255, 0.459);
+    --black: black;
 
-
+    --textPadding: 3%;
+    --fontsizeMain: .9rem;
 
 
     line-height: 28px;
@@ -14,25 +21,27 @@
 
 /*Main html tags*/
 
-body{
+body {
     margin: 0;
     scroll-behavior: smooth;
 }
 
-h1{
+h1 {
     font-size: 6rem;
     text-align: center;
     margin-bottom: 100vh 0;
 }
 
-h2{
+h2 {
     font-size: 2rem;
+    margin: 0;
 }
 
 
-header{
+header {
     padding: 30vh 0;
     background-image: url(/Images/placeholder.jpg);
+    /* blur this image */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,53 +49,81 @@ header{
 }
 
 
+
 /*Id's - sections*/
+
+#styling_header{
+    background-color: var(--color4);
+}
+
+#styling_section_how{
+    background-color: var(--color5);
+}
+
+#styling_section_warnings{
+    background-color: var(--color5);
+    padding-bottom: 5vh;
+}
 
 
 /*Classes*/
 
-.center_container{
+.center_container {
     max-width: 80vw;
     margin: 0 auto;
 }
 
-.push_down{
-    margin-bottom: 10vh;
+
+.center_container_and_push_down {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 10vh 0;
 }
 
-.navbar_instructions{
+
+.navbar_instructions {
     display: flex;
     justify-content: space-between;
-    padding: 2vh 0;
+    padding: 3vh 1vw;
+    background-color: var(--color2);
+    border-bottom: solid 5px black;
+    
 }
 
-.sticky{
+.sticky {
     position: sticky;
     top: 0;
 }
 
-.navbar_instructions a{
-    padding: 1vh 1vw;
+.navbar_instructions a {
+    padding: 2vh 1vw;
     text-decoration: none;
     border-style: solid;
+    border-color: var(--color1);
     border-radius: 5px;
-    color: black;
+    color: white;
+    background-color: var(--color1);
 }
 
 
-.navbar_instructions a:hover{
+.navbar_instructions a:hover {
     color: grey;
 }
 
-.instruction_images{
+.instruction_images {
     display: flex;
     gap: 1vw;
     margin-bottom: 20vh;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
-.instruction_images img{
+.instruction_images img {
     flex: 1;
-    width: 0%;  
+    width: 0%;
     object-fit: cover;
 }
 
+
+/*Responsiveness*/
+@media (width <=480px) {}
