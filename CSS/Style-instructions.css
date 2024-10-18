@@ -41,6 +41,9 @@ h2 {
     margin: 0;
 }
 
+p{
+    font-weight: 350;
+}
 
 header {
     padding: 30vh 0;
@@ -128,6 +131,33 @@ header {
     object-fit: cover;
 }
 
+
+/* Footer copy paste */
+footer{
+    background-color: var(--color2);
+    margin: 0;
+    min-height: 10vh;
+}
+
+footer a{
+    background-color: transparent;
+    text-decoration: none;              /* extra code */
+    color: black;
+}
+
+footer a:hover{
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;                /* extra code */
+    padding: 3%;
+    max-height: 5vh;
+}
 
 /*Responsiveness*/
 @media (width <=480px) {}

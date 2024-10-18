@@ -52,6 +52,7 @@ nav{
     height: 10vh;
     text-align: right;
     justify-content: space-between;
+    animation: ease-in 1.3s navbar_animation;
 }
 
 nav div{
@@ -197,4 +198,15 @@ footer a:hover{
 /*Responsiveness*/
 @media (width <= 480px){
 
+}
+
+/* animations */
+@keyframes navbar_animation {
+    from{
+        transform: translate(-1200px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
 }
