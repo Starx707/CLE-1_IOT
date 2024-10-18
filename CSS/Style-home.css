@@ -19,6 +19,17 @@
     --gapSize: 5%;
 }
 
+/* animations */
+@keyframes navbar_animation {
+    from{
+        transform: translate(-1200px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
 /*Main html tags*/
 
 body{
@@ -199,15 +210,4 @@ footer a:hover{
 /*Responsiveness*/
 @media (width <= 480px){
 
-}
-
-/* animations */
-@keyframes navbar_animation {
-    from{
-        transform: translate(-1200px);
-    }
-
-    to{
-        transform: translate(0px);
-    }
 }
