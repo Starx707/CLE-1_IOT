@@ -52,6 +52,7 @@ nav{
     height: 10vh;
     text-align: right;
     justify-content: space-between;
+    padding-top: 1vh;
 }
 
 nav div{
