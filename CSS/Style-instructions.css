@@ -21,6 +21,17 @@
     line-height: 28px;
 }
 
+/* animations */
+@keyframes navbar_animation {
+    from{
+        transform: translate(-1200px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
 /*Main html tags*/
 
 html{
@@ -99,7 +110,7 @@ header {
     padding: 3vh 1vw;
     background-color: var(--color2);
     border-bottom: solid 5px black;
-    
+    animation: ease-in 1.3s navbar_animation;
 }
 
 .sticky {
