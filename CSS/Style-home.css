@@ -5,11 +5,13 @@
     font-optical-sizing: auto;
     font-style: normal;
 
+    color: #FF6500;
+
     --color1: #03045E;
-    --color2: #0077B6;
-    --color3: #00B4D8;
-    --color4: #90E0EF;
-    --color5: #CAF0F8;
+    --color2: #FF6500;
+    --color3: #1E3E62;
+    --color4: #000000;
+    --color5: #0B192C;
     --white: white;
     --transparentWhite: rgba(255, 255, 255, 0.459);
     --black: black;
@@ -39,10 +41,12 @@ body{
 
 h1{
     font-weight: 500;
+    font-size: 3rem;
 }
 
 h2{
     font-weight: 450;
+    font-size: 2rem;
 }
 
 hr{
@@ -69,7 +73,6 @@ nav{
 
 nav div{
     align-self: center;
-    margin-right: 5%;
 }
 
 a{
@@ -102,13 +105,12 @@ footer a{
 footer a:hover{
     background-color: transparent;
     color: black;
-    text-decoration: underline;
 }
 
 /*Id's - sections*/
 #product{
     border-top: var(--color1) double 8px;
-    background-color: var(--color4);
+    background-color: var(--color1);
     display: flex;
     gap: var(--gapSize);
     padding: 10%;
@@ -151,6 +153,7 @@ footer a:hover{
     max-width: 35vw;
     text-align: left;
     padding-bottom: 5%;
+    color: white;
 }
 
 #foot{
@@ -158,6 +161,10 @@ footer a:hover{
     justify-content: space-between;
     padding: 3%;
     max-height: 5vh;
+}
+
+#foot p{
+    color: black;
 }
 
 /*Classes*/
@@ -205,6 +212,51 @@ footer a:hover{
     display: flex;
     justify-content: center;
     gap: var(--gapSize);
+}
+
+
+/* copy paste from instructions css, for navbar */
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.navbar_instructions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 1vw;
+    background-color: var(--color2);
+    border-bottom: solid 5px black;
+    animation: ease-in 1.3s navbar_animation;
+}
+
+.navbar_instructions img{
+    width: 5vw;
+}
+
+#no_border{
+    background-color: #FF6500;
+    border-style: none;
+}
+
+.navbar_instructions a {
+    padding: 2vh 1vw;
+    text-decoration: none;
+    border-style: solid;
+    border-color: var(--color1);
+    border-radius: 5px;
+    color: white;
+    background-color: var(--color1);
+}
+
+.navbar_instructions img{
+    width: 5vw;
+}
+
+.navbar_instructions a:hover {
+    color: grey;
 }
 
 /*Responsiveness*/

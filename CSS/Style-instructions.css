@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -89,6 +91,11 @@ header {
     color: black;
 }
 
+#no_border{
+    background-color: #FF6500;
+    border-style: none;
+}
+
 /*Classes*/
 
 .center_container {
@@ -107,6 +114,7 @@ header {
 .navbar_instructions {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 3vh 1vw;
     background-color: var(--color2);
     border-bottom: solid 5px black;
@@ -128,6 +136,9 @@ header {
     background-color: var(--color1);
 }
 
+.navbar_instructions img{
+    width: 5vw;
+}
 
 .navbar_instructions a:hover {
     color: grey;
