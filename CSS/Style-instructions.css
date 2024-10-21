@@ -3,11 +3,14 @@
     font-optical-sizing: auto;
     font-style: normal;
 
+    color: #FF6500;     /* change color of text */
+
     --color1: #03045E;
-    --color2: #0077B6;
-    --color3: #00B4D8;
-    --color4: #90E0EF;
-    --color5: #CAF0F8;
+    --color2: #FF6500;
+    --color3: #1E3E62;
+    --color4: #000000;
+    --color5: #0B192C;
+
     --white: white;
     --transparentWhite: rgba(255, 255, 255, 0.459);
     --black: black;
@@ -15,8 +18,18 @@
     --textPadding: 3%;
     --fontsizeMain: .9rem;
 
-
     line-height: 28px;
+}
+
+/* animations */
+@keyframes navbar_animation {
+    from{
+        transform: translate(-1200px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
 }
 
 /*Main html tags*/
@@ -28,6 +41,7 @@ html{
 body {
     margin: 0;
     scroll-behavior: smooth;
+    background-color: var(--color5);    
 }
 
 h1 {
@@ -46,9 +60,8 @@ p{
 }
 
 header {
-    padding: 30vh 0;
-    background-image: url(/Images/placeholder.jpg);
-    /* blur this image */
+    padding: 15vh 0;
+    background-image: url(/Images/placeholder.jpg); /* blur this image */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,10 +81,13 @@ header {
 }
 
 #styling_section_warnings{
-    background-color: var(--color5);
+    background-color: var(--transparentWhite);
     padding-bottom: 5vh;
 }
 
+#foot p{
+    color: black;
+}
 
 /*Classes*/
 
@@ -84,7 +100,7 @@ header {
 .center_container_and_push_down {
     max-width: 80vw;
     margin: 0 auto;
-    padding: 10vh 0;
+    padding: 5vh 0;
 }
 
 
@@ -94,7 +110,7 @@ header {
     padding: 3vh 1vw;
     background-color: var(--color2);
     border-bottom: solid 5px black;
-    
+    animation: ease-in 1.3s navbar_animation;
 }
 
 .sticky {
@@ -121,18 +137,17 @@ header {
     display: flex;
     gap: 1vw;
     margin-bottom: 20vh;
-    max-width: 80vw;
     margin: 0 auto;
 }
 
 .instruction_images img {
     flex: 1;
-    width: 0%;
-    object-fit: cover;
+    max-width: 33%;     /* change with amount of images */
 }
 
 
 /* Footer copy paste */
+
 footer{
     background-color: var(--color2);
     margin: 0;
@@ -160,4 +175,30 @@ footer a:hover{
 }
 
 /*Responsiveness*/
-@media (width <=480px) {}
+@media (width <=800px) {
+    *{
+        font-size: 0.9rem;
+    }
+}
+
+@media (width <=600px) {
+    *{
+        font-size: 0.8rem;
+    }
+}
+
+@media (width <= 480px) {
+    h1{
+        font-size: 4rem;
+    }
+
+    .instruction_images{
+        flex-direction: column;
+        align-items: center;
+    }
+    .instruction_images img {
+        flex: 1;
+        max-width: 100%;
+        padding: 1vh 0;
+    }
+}
