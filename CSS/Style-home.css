@@ -12,9 +12,35 @@
     --color3: #1E3E62;
     --color4: #000000;
     --color5: #0B192C;
+
+    /*Star's halloween palette*/
+    --Ectay: #C4623A;
+    --GoldenTips: #E5A02D;
+    --Cherokee: #F0C979;
+    --Windsor: #57217B;
+    --Blackcurrant: #1c092add;
+
     --white: white;
-    --transparentWhite: rgba(255, 255, 255, 0.459);
     --black: black;
+    --grey: rgb(84, 84, 84);
+    --transparentWhite: rgba(255, 255, 255, 0.459);
+    --transparentBlack: rgba(0, 0, 0, 0.864);
+
+
+    --font-color1: var(--white);
+    --font-color2: var(--black);
+
+    /*testing colors*/
+    --testcolor: rgba(29, 40, 27, 0.945);
+
+
+
+    /*old palette*/
+    --blue1: #03045E;
+    --blue2: #0077B6;
+    --blue3: #00B4D8;
+    --blue4: #90E0EF;
+    --blue5: #CAF0F8;
 
     --textPadding: 3%;
     --fontsizeMain: .9rem;
@@ -24,19 +50,31 @@
 /* animations */
 @keyframes navbar_animation {
     from{
-        transform: translate(-1200px);
+        opacity: 0;
     }
 
     to{
-        transform: translate(0px);
+        opacity: 1;
     }
 }
 
 /*Main html tags*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
-    background-color: var(--color5);
+    background-color: var(--testcolor);
+}
+
+main p{
+    color: var(--font-color1);
+}
+
+main h2{
+    color: var(--font-color1);
 }
 
 h1{
@@ -63,12 +101,33 @@ img{
 }
 
 nav{
-    background-color: var(--color2);
-    height: 10vh;
-    text-align: right;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 3vh 1vw;
+    background-color: var(--color2);
+    border-bottom: solid 5px black;
     animation: ease-in 1.3s navbar_animation;
-    padding-top: 1vh;
+}
+
+nav img{
+    width: 5vw;
+}
+
+nav a{
+    padding: 2vh 1vw;
+    text-decoration: none;
+    border-style: solid;
+    border-color: var(--Ectay);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+nav a:hover{
+    background-color: var(--black);
+    color: var(--grey);
+    border: var(--Cherokee) solid 2px;
 }
 
 nav div{
@@ -76,47 +135,63 @@ nav div{
 }
 
 a{
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     padding: 1.5%;
-    background-color: var(--color1);
-    transition: background-color 1s;
+    background-color: var(--GoldenTips);
+    transition: background-color 2s;
     transition: color .5s;
     border-radius: 5%;
 }
 
 a:hover{
-    background-color: var(--color4);
-    color: var(--black);
-    border: var(--black) solid 2px;
+    background-color: var(--black);
+    color: var(--white);
+    border: var(--Cherokee) solid 2px;
 }
 
 footer{
-    background-color: var(--color2);
+    background-color: var(--black);
     margin: 0;
     min-height: 10vh;
 }
 
 footer a{
     background-color: transparent;
-    color: black;
+    color: var(--white);
 }
 
 footer a:hover{
     background-color: transparent;
-    color: black;
+    color: var(--white);
+    text-decoration: underline;
+}
+
+footer p{
+    color: var(--white);
 }
 
 /*Id's - sections*/
+#logo{
+    background-color: #FF6500;
+    border-style: none;
+    transition: background-color 2s;
+}
+
+#logo:hover{
+    background-color: var(--black);
+}
+
 #product{
-    border-top: var(--color1) double 8px;
-    background-color: var(--color1);
+    border-top: var(--color2) double 8px;
+    background-color: var(--transparentBlack);
     display: flex;
     gap: var(--gapSize);
     padding: 10%;
     justify-content: center;
     max-height: 50vh;
     min-height: 45vh;
+    color: var(--white);
 }
 
 #product img{
@@ -124,6 +199,11 @@ footer a:hover{
     max-height: 45vh;
     width: 30vw;
     height: 55vh;
+    position: relative;
+}
+
+#product p, h1{
+    color: var(--font-color1);
 }
 
 #timeline{
@@ -153,7 +233,11 @@ footer a:hover{
     max-width: 35vw;
     text-align: left;
     padding-bottom: 5%;
-    color: white;
+    color: var(--black);
+}
+
+#about h2{
+    color: var(--black);
 }
 
 #foot{
@@ -164,16 +248,28 @@ footer a:hover{
 }
 
 #foot p{
-    color: black;
+    color: var(--white);
 }
 
 /*Classes*/
 .info-product{
     text-align: right;
+    position: relative;
 }
 
 .info-product p{
     max-width: 35vw;
+}
+
+.background-product{
+    position: absolute;
+    margin-left: 60vw;
+    margin-top: 20vh;
+
+}
+
+.background-product img{
+    object-fit: cover;
 }
 
 .timeline-content{
@@ -212,51 +308,6 @@ footer a:hover{
     display: flex;
     justify-content: center;
     gap: var(--gapSize);
-}
-
-
-/* copy paste from instructions css, for navbar */
-
-.sticky {
-    position: sticky;
-    top: 0;
-}
-
-.navbar_instructions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3vh 1vw;
-    background-color: var(--color2);
-    border-bottom: solid 5px black;
-    animation: ease-in 1.3s navbar_animation;
-}
-
-.navbar_instructions img{
-    width: 5vw;
-}
-
-#no_border{
-    background-color: #FF6500;
-    border-style: none;
-}
-
-.navbar_instructions a {
-    padding: 2vh 1vw;
-    text-decoration: none;
-    border-style: solid;
-    border-color: var(--color1);
-    border-radius: 5px;
-    color: white;
-    background-color: var(--color1);
-}
-
-.navbar_instructions img{
-    width: 5vw;
-}
-
-.navbar_instructions a:hover {
-    color: grey;
 }
 
 /*Responsiveness*/
