@@ -105,7 +105,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 3vh 1vw;
-    background-color: var(--color2);
+    background-color: var(--transparentOrange);
     border-bottom: solid 5px black;
     animation: ease-in 1.3s fade_animation;
 }
@@ -165,6 +165,7 @@ footer a:hover{
     background-color: transparent;
     color: var(--white);
     text-decoration: underline;
+    border: transparent;
 }
 
 footer p{
@@ -173,7 +174,7 @@ footer p{
 
 /*Id's - sections*/
 #logo{
-    background-color: #FF6500;
+    background-color: transparent;
     border-style: none;
     transition: background-color 2s;
 }
@@ -214,6 +215,7 @@ footer p{
 #timeline h2{
     text-align: center;
     margin: 5%;
+    text-decoration: underline;
 }
 
 #timeline p{
