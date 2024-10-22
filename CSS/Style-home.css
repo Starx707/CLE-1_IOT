@@ -25,13 +25,13 @@
     --grey: rgb(84, 84, 84);
     --transparentWhite: rgba(255, 255, 255, 0.459);
     --transparentBlack: rgba(0, 0, 0, 0.864);
-
+    --transparentOrange: #ff6600c6;
 
     --font-color1: var(--white);
     --font-color2: var(--black);
 
     /*testing colors*/
-    --testcolor: rgba(29, 40, 27, 0.945);
+    --testcolor: rgba(32, 32, 32, 0.986); /*29, 40, 27, 0.945 < old, verion 2 > 42, 24, 42, 0.986*/
 
 
 
@@ -48,7 +48,7 @@
 }
 
 /* animations */
-@keyframes navbar_animation {
+@keyframes fade_animation {
     from{
         opacity: 0;
     }
@@ -107,7 +107,7 @@ nav{
     padding: 3vh 1vw;
     background-color: var(--color2);
     border-bottom: solid 5px black;
-    animation: ease-in 1.3s navbar_animation;
+    animation: ease-in 1.3s fade_animation;
 }
 
 nav img{
@@ -147,7 +147,7 @@ a{
 a:hover{
     background-color: var(--black);
     color: var(--white);
-    border: var(--Cherokee) solid 2px;
+    border: var(--white) solid 2px;
 }
 
 footer{
@@ -221,12 +221,13 @@ footer p{
 }
 
 #about{
-    background-color: var(--transparentWhite);
+    background-color: var(--transparentOrange);
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 5%;
     min-height: 35vh;
+    border-top: var(--black) 8px double;
 }
 
 #about p{
@@ -270,6 +271,20 @@ footer p{
 
 .background-product img{
     object-fit: cover;
+    animation: ease-in 1.3s fade_animation;
+}
+
+.dripping-div{
+    width: 100vw;
+    height: 35vh;
+
+}
+
+.dripping-div img{
+    object-fit: cover;
+    width: 100vw;
+    height: 65vh;
+    object-position: bottom;
 }
 
 .timeline-content{
