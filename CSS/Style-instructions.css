@@ -69,11 +69,12 @@ p{
 }
 
 header {
-    padding: 15vh 0;
-    background-image: url(/Images/placeholder.jpg); /* blur this image */
-    background-repeat: no-repeat;
+    padding: 20vh 0;
+    background-image: /* linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)) , */ url(/Images/Distraction-killer-banner-one.png); /* blur this image */
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
     border-radius: 0.4vw;
 }
 
@@ -137,10 +138,10 @@ header {
     padding: 2vh 1vw;
     text-decoration: none;
     border-style: solid;
-    border-color: var(--color1);
+    border-color: black;
     border-radius: 5px;
     color: white;
-    background-color: var(--color1);
+    background-color: black;
 }
 
 .navbar_instructions img{
