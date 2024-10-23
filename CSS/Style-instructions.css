@@ -70,9 +70,9 @@ p{
 
 header {
     padding: 20vh 0;
-    background-image: /* linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)) , */ url(/Images/Distraction-killer-banner-one.png); /* blur this image */
+    background-image:  linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)) ,  url(/Images/image-two-blurred.jpg); /* blur this image */
     background-repeat: repeat;
-    background-position: center;
+    background-position: 50% 70%;
     background-size: cover;
     object-fit: cover;
     border-radius: 0.4vw;
@@ -146,6 +146,7 @@ header {
 
 .navbar_instructions img{
     width: 5vw;
+    object-fit: cover;
 }
 
 .navbar_instructions a:hover {
@@ -161,7 +162,8 @@ header {
 
 .instruction_images img {
     flex: 1;
-    max-width: 33%;     /* change with amount of images */
+    width: 33%;     /* change with amount of images */
+    height: 50vh;
 }
 
 
