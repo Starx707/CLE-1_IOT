@@ -58,6 +58,18 @@
     }
 }
 
+@keyframes background-fade {
+    100%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: var(--black);
+    }
+    0%{
+        background-color: transparent;
+    }
+}
+
 /*Main html tags*/
 
 html{
@@ -180,7 +192,8 @@ footer p{
 }
 
 #logo:hover{
-    background-color: var(--black);
+    animation: background-fade 3s;
+    animation-iteration-count: infinite;
 }
 
 #product{
