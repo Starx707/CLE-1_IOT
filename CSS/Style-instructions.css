@@ -13,6 +13,13 @@
     --color4: #000000;
     --color5: #0B192C;
 
+    /* --color1: #C4623A;
+    --color2: #E5A02D;
+    --color3: #F0C979;
+    --color4: #57217B;
+    --color5: #1c092add; */
+
+
     --white: white;
     --transparentWhite: rgba(255, 255, 255, 0.459);
     --black: black;
@@ -83,16 +90,16 @@ header {
 }
 
 #styling_section_warnings{
-    background-color: var(--transparentWhite);
+    background-color: #232323;
     padding-bottom: 5vh;
 }
 
 #foot p{
-    color: black;
+    color: white;
 }
 
 #no_border{
-    background-color: #FF6500;
+    background-color: #CE5708;
     border-style: none;
 }
 
@@ -116,7 +123,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3vh 1vw;
-    background-color: var(--color2);
+    background-color:#CE5708;
     border-bottom: solid 5px black;
     animation: ease-in 1.3s navbar_animation;
 }
@@ -160,7 +167,7 @@ header {
 /* Footer copy paste */
 
 footer{
-    background-color: var(--color2);
+    background-color: black;
     margin: 0;
     min-height: 10vh;
 }
@@ -168,12 +175,12 @@ footer{
 footer a{
     background-color: transparent;
     text-decoration: none;              /* extra code */
-    color: black;
+    color: white;
 }
 
 footer a:hover{
     background-color: transparent;
-    color: black;
+    color: grey;
     text-decoration: underline;
 }
 
